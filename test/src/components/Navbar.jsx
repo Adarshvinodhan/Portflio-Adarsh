@@ -1,5 +1,6 @@
-// src/components/Navbar.js
 import React from 'react';
+import { MailIcon, DocumentTextIcon } from '@heroicons/react/outline'; // Import heroicons
+import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Import Font Awesome icons
 
 const Navbar = () => {
   return (
@@ -10,19 +11,27 @@ const Navbar = () => {
           Adarsh V
         </a>
 
-        {/* Links */}
+        {/* Social Media Icons */}
         <ul className="hidden md:flex space-x-6 text-white">
           <li>
-            <a href="#home" className="hover:text-gray-400">Home</a>
+            <a href="https://www.linkedin.com/in/adarshvinodhan/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+              <FaLinkedin className="w-6 h-6" />
+            </a>
           </li>
           <li>
-            <a href="#about" className="hover:text-gray-400">About</a>
+            <a href="https://github.com/Adarshvinodhan" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+              <FaGithub className="w-6 h-6" />
+            </a>
           </li>
           <li>
-            <a href="#projects" className="hover:text-gray-400">Projects</a>
+            <a href="mailto:adarshvinodhan@gmail.com" className="hover:text-gray-400">
+              <MailIcon className="w-6 h-6" />
+            </a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-gray-400">Contact</a>
+            <a href="https://docs.google.com/document/d/11WCOTrfJZKpJwSyVLL0c-PILcEEt0EML_yogGFktAMY/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+              <DocumentTextIcon className="w-6 h-6" />
+            </a>
           </li>
         </ul>
 
